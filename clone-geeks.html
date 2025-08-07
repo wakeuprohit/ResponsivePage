@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Segoe UI',sans-serif;
+            background-color: #f2f2f2;
+        }
+        header{
+            background-color: #2f8d46;
+            padding: 15px 0;
+            color: white;   
+        }
+        .container{
+                max-width: 1200px;
+                padding: 0 20px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .search-box{
+            border: none;
+            padding: 7px 10px;
+            border-radius: 4px;
+            width: 200px;
+        }
+        nav{
+            background-color:  #3cb371;
+        }
+        .nav{
+    
+
+        }
+        .nav ul{
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+        padding: 10px 0px;
+        flex-wrap: wrap;
+        
+        }
+        .nav li{
+            margin: 0 15px;
+
+        }
+        .nav li a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .hero h1{
+               font-size: 40px;
+               font-weight: 200px;
+               color: #3cb371;
+               text-align: center;
+               margin-bottom: 10px;
+        }
+        .hero p{
+            text-align: center;
+            padding: 5px 0;
+            font-size: 20px;
+            font-weight:100px;
+        }
+        .section{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+
+        }
+        .card{
+            background-color:white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+
+
+        }
+        .card h2{
+            color: #2f8d46;
+            margin-bottom: 10px;
+        }
+        footer{
+            margin-top: 275px;
+            padding: 20px;
+            text-align: center;
+            background-color: #2f8d46;
+            color: white;
+        }
+        @media only screen and (min-width:0px) and(max-width:768px){
+            .container{
+               flex-direction: column;
+               gap: 10px;
+               align-items: flex-start;
+            }
+            .search-box{
+                width: 100px;
+            }
+            nav ul{
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .nav ul li{
+                margin: 10px 0;
+
+            }
+            .hero h1{
+                font-size: 28px;
+            }
+            .card{
+                width: 100%;
+                max-width: 90%;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+       <div class="logo">Geeks for Geeks</div>
+       <input type="text" class="search-box" placeholder="Seach hear ...">
+       </div>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="#">Job</a></li>
+        <li><a href="#">Practice</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Gate</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Welcome to Geeks for Geeks</h1>
+      <p>learn coding , solve problem and creack Dream job</p>  
+    </section>
+    <section class="section">
+        <div class="card">
+            <h2>Data structure</h2>
+            <p>Explore array,linked list,trees,and Graph in depth</p>
+        </div>
+        <div class="card">
+          <h2>Algorithms</h2>
+          <p>Learn About Searching,Sorting recursion,Dynamic Programming</p>
+        </div>
+        <div class="card"> 
+            <h2>Web development</h2>
+            <p>HTML,CSS,JavaScript,React <br>everythings to build website </p>
+        </div>
+    </section>
+    <footer class="bottom">
+        <p>&copy;2025 Geeksforgeeks colne. All rights reserved</p>
+
+    </footer>
+</body>
+</html>
